@@ -15,21 +15,52 @@ namespace APIBoletim.Repositories
         BoletimContext conexao = new BoletimContext();
 
         SqlCommand cmd = new SqlCommand();
+        public Aluno BuscarPorID(int id)
+        {
+            cmd.Connection = conexao.Conectar();
+
+            cmd.CommandText = "SELECT * FROM aluno WHERE IdAluno = @id";
+            cmd.Parameters.AddWithValue("@id", id);
+
+            SqlDataReader dados = cmd.ExecuteReader();
+
+            Aluno aluno = new Aluno();
+
+            while(dados.Read())
+            {
+                aluno.IdAluno   = Convert.ToInt32(dados.GetValue(0));
+                aluno.Nome      = dados.GetValue(1).ToString();
+                aluno.RA        = dados.GetValue(2).ToString();
+                aluno.Idade     = Convert.ToInt32(dados.GetValue(3));
+            }
+            conexao.Desconectar();
+
+            return aluno;
+        }
         
+        public Aluno Cadastrar(Aluno a)
+        {
+            cmd.Connection  = conexao.Conectar();
+
+            cmd.CommandText =
+                "INSERT INTO aluno (Nome, Ra, Idade)" +
+                "VALUES" +
+                "(@nome, @ra, @idade)";
+            cmd.Parameters.AddWithValue("@nome", a.Nome);
+            cmd.Parameters.AddWithValue("@ra", a.RA);
+            cmd.Parameters.AddWithValue("@idade", a.Idade);
+
+            cmd.ExecuteNonQuery();
+            conexao.Desconectar();
+
+            return a;
+        }
+
         public Aluno Alterar(Aluno a)
         {
             throw new NotImplementedException();
         }
 
-        public Aluno BuscarPorID(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Aluno Cadastrar(Aluno a)
-        {
-            throw new NotImplementedException();
-        }
 
         public Aluno Excluir(Aluno a)
         {

@@ -26,15 +26,16 @@ namespace APIBoletim.Controllers
 
         // GET api/<AlunoController>/10
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Aluno Get(int id)
         {
-            return "value";
+            return repo.BuscarPorID(id);
         }
 
         // POST api/<AlunoController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public Aluno Post([FromBody] Aluno a)
         {
+            return repo.Cadastrar(a);
         }
 
         // PUT api/<AlunoController>/5
