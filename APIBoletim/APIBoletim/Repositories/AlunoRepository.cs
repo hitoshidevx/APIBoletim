@@ -66,7 +66,6 @@ namespace APIBoletim.Repositories
         {
             throw new NotImplementedException();
         }
-
         public List<Aluno> ListarTodos()
         {
             cmd.Connection = conexao.Conectar();
@@ -95,3 +94,4 @@ namespace APIBoletim.Repositories
         }
     }
 }
+
