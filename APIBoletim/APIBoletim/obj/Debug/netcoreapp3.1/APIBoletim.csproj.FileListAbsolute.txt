@@ -16,3 +16,12 @@ C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\obj\Debug\net
 C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.dll
 C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.pdb
 C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.genruntimeconfig.cache
+C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.csproj.CoreCompileInputs.cache
+C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Kiyoshi\Documents\GitHub\APIBoletim\APIBoletim\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.csproj.CopyComplete
