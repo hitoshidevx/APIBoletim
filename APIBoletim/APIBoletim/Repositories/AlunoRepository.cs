@@ -56,15 +56,38 @@ namespace APIBoletim.Repositories
             return a;
         }
 
-        public Aluno Alterar(Aluno a)
+        public Aluno Alterar(int id, Aluno a)
         {
-            throw new NotImplementedException();
+            cmd.Connection = conexao.Conectar();
+
+            cmd.CommandText = "UPDATE aluno SET " +
+                "Nome  = @nome, " +
+                "Ra    = @ra, " +
+                "Idade = @idade WHERE IdAluno = @id";
+
+            cmd.Parameters.AddWithValue("id", id);
+
+            cmd.Parameters.AddWithValue("@nome", a.Nome);
+            cmd.Parameters.AddWithValue("@ra", a.RA);
+            cmd.Parameters.AddWithValue("@idade", a.Idade);
+
+            cmd.ExecuteNonQuery();
+
+            conexao.Desconectar();
+            return a;
         }
 
 
-        public Aluno Excluir(Aluno a)
+        public void Excluir(int id)
         {
-            throw new NotImplementedException();
+            cmd.Connection = conexao.Conectar();
+
+            cmd.CommandText = "DELETE FROM Aluno WHERE IdAluno = @id";
+            cmd.Parameters.AddWithValue("@id", id);
+
+            cmd.ExecuteNonQuery();
+
+            conexao.Desconectar();
         }
         public List<Aluno> ListarTodos()
         {
